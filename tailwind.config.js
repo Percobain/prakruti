@@ -13,8 +13,9 @@ export default {
         pink: '#F4C2C2',
       },
       fontFamily: {
-        luxury: ['"Playfair Display"', 'serif'],
-        modern: ['"Montserrat"', 'sans-serif'],
+        hatton: ['RoxboroughCF', 'serif'],
+        luxury: ['RoxboroughCF', 'serif'],
+        modern: ['RoxboroughCF', 'sans-serif'],
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

@@ -8,21 +8,21 @@ const testimonials = [
     quote: "प्रकृति's Golden Elixir transformed my skincare routine. The quality is unmatched—I've never felt more confident in my natural glow.",
     author: "Priya Malhotra",
     role: "Beauty Enthusiast",
-    image: "https://i.pinimg.com/280x280_RS/5e/87/b0/5e87b0ad163855c993d624a528649045.jpg"
+    image: "/moroccan-clay-blush.webp"
   },
   {
     id: 2,
     quote: "As someone with sensitive skin, finding the Sacred Earth collection was a revelation. These products honor tradition while delivering extraordinary results.",
     author: "Amar Singh",
     role: "Wellness Advocate",
-    image: "https://i.pinimg.com/280x280_RS/5e/87/b0/5e87b0ad163855c993d624a528649045.jpg"
+    image: "/moroccan-clay-blush.webp"
   },
   {
     id: 3,
     quote: "The Himalayan Bloom facial oil has become my non-negotiable luxury. Worth every penny for the incredible scent and visible improvement in my skin's texture.",
     author: "Zara Ahmed",
     role: "Lifestyle Blogger",
-    image: "https://i.pinimg.com/280x280_RS/5e/87/b0/5e87b0ad163855c993d624a528649045.jpg"
+    image: "/moroccan-clay-blush.webp"
   }
 ];
 

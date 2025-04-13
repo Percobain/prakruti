@@ -12,7 +12,6 @@ const BrandStory = () => {
 
   return (
     <section className="py-24 relative overflow-hidden">
-      {/* Background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-white"></div>
         <div className="absolute right-0 top-0 h-96 w-96 bg-[#F5F5DC]/50 rounded-full blur-3xl -translate-y-1/2"></div>
@@ -21,7 +20,6 @@ const BrandStory = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center">
-          {/* Image columns */}
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
             <div className="grid grid-cols-2 gap-4 pr-0 lg:pr-12">
               <div className="space-y-4">
@@ -59,50 +57,49 @@ const BrandStory = () => {
             </div>
           </div>
 
-          {/* Text content */}
           <div className="w-full lg:w-1/2 lg:pl-12" data-aos="fade-left">
-            <span className="block font-modern text-sm uppercase tracking-widest text-[#D4AF37] mb-4">Our Legacy</span>
+            <span className="block font-modern text-sm uppercase tracking-widest text-[#D4AF37] mb-4">Our Story</span>
             <h2 className="font-luxury text-4xl md:text-5xl mb-8 text-[#708238] leading-tight">
-              The Art of <br/><span className="text-[#D4AF37]">Ayurvedic Beauty</span>
+              Prakriti: <br/><span className="text-[#D4AF37]">Earth's Own</span>
             </h2>
 
             <div className="prose prose-lg max-w-none">
               <p className="font-modern text-gray-700 mb-6 leading-relaxed">
-                Founded in the foothills of the Himalayas in 2010, प्रकृति (Prakruti) was born from a deep reverence for 
-                nature's wisdom and ancient Ayurvedic traditions passed down through generations.
+                At Prakriti, we believe true beauty lies in simplicity, tradition, and the power of nature. Born in India and
+                inspired by its rich heritage, Prakriti brings back the forgotten treasures of natural makeup—like hand-ground
+                surma, clay-based blushes, and plant-infused lip colors—once found in our grandmothers' beauty rituals.
               </p>
               
               <p className="font-modern text-gray-700 mb-6 leading-relaxed">
-                Our founder, Gaara, grew up learning the secrets of botanical formulations from her grandmother, 
-                creating traditional Kumkum, Surma, and herbal tints using indigenous practices. These cherished recipes, 
-                refined over centuries, form the heart of our exclusive collections.
+                We're here to revive these timeless traditions with a modern touch—pure, effective, and made for everyday wear.
+                Our products are crafted using responsibly sourced natural ingredients, free from harsh chemicals, and rooted
+                in the principles of Ayurveda and holistic wellness.
               </p>
               
               <p className="font-modern text-gray-700 mb-8 leading-relaxed">
-                Every प्रकृति product embodies our commitment to purity and sustainability. From our beetroot lip tints 
-                to vegetable carbon kohl, we use plant-heavy ingredients that nourish rather than harm, packaged in 
-                eco-friendly, refillable metal containers honoring ancient traditions.
+                Prakriti is for those who want makeup that feels good, looks natural, and honors the skin. It's beauty you can
+                trust—clean, nourishing, and thoughtfully made. With Prakriti, tradition meets today—naturally.
               </p>
             </div>
 
             <div className="flex items-center space-x-8 mt-12">
               <div data-aos="fade-up" data-aos-delay="100">
                 <span className="block text-4xl font-luxury text-[#D4AF37]">100%</span>
-                <span className="block text-xs uppercase tracking-wider font-modern text-gray-600 mt-1">Plant-based</span>
+                <span className="block text-xs uppercase tracking-wider font-modern text-gray-600 mt-1">Natural</span>
               </div>
               
               <div className="h-12 w-px bg-[#F5F5DC]"></div>
               
               <div data-aos="fade-up" data-aos-delay="200">
                 <span className="block text-4xl font-luxury text-[#D4AF37]">Zero</span>
-                <span className="block text-xs uppercase tracking-wider font-modern text-gray-600 mt-1">Synthetics</span>
+                <span className="block text-xs uppercase tracking-wider font-modern text-gray-600 mt-1">Chemicals</span>
               </div>
               
               <div className="h-12 w-px bg-[#F5F5DC]"></div>
               
               <div data-aos="fade-up" data-aos-delay="300">
-                <span className="block text-4xl font-luxury text-[#D4AF37]">13</span>
-                <span className="block text-xs uppercase tracking-wider font-modern text-gray-600 mt-1">Years</span>
+                <span className="block text-4xl font-luxury text-[#D4AF37]">Ayurvedic</span>
+                <span className="block text-xs uppercase tracking-wider font-modern text-gray-600 mt-1">Principles</span>
               </div>
             </div>
             

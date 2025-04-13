@@ -21,18 +21,18 @@ const products = [
   },
   {
     id: 3,
-    name: "Traditional Kumkum",
-    description: "Hand-crafted kumkum with natural mineral pigments and rose petals in decorative stamps",
+    name: "Traditional Surma",
+    description: "Hand-crafted traditional kohl made with pure herbs and minerals for defining eyes with natural elegance",
     price: "₹1,500",
-    image: "https://images.unsplash.com/photo-1617897903246-719242758050?q=80&w=1000&auto=format&fit=crop",
-    category: "Ceremonial"
+    image: "/surma.webp",
+    category: "Eye Essentials"
   },
   {
     id: 4,
     name: "Moroccan Clay Blush",
     description: "Subtle radiance with our mineral-rich Moroccan clay blush that doubles as a skin treatment",
     price: "₹1,400",
-    image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=1000&auto=format&fit=crop",
+    image: "/moroccan-clay-blush.webp",
     category: "Face Color"
   }
 ];

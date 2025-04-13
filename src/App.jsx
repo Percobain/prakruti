@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <div className="font-modern text-gray-800 overflow-x-hidden">
+    <div className="font-hatton text-gray-800 overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />
