@@ -28,8 +28,8 @@ function App() {
       <main>
         <Hero />
         <BrandStory />
-        <CollectionShowcase />
         <Varieties />
+        <CollectionShowcase />
         <Testimonial />
       </main>
       <Footer />

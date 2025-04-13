@@ -99,8 +99,7 @@ const Footer = () => {
               </ul>
             </div>
             
-            {/* Contact */}
-            <div>
+            <div id="contact">
               <h4 className="font-luxury text-lg text-[#708238] mb-5">Contact</h4>
               <ul className="space-y-4">
                 <li className="flex items-start">

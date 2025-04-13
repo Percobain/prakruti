@@ -1,9 +1,10 @@
-// src/components/Navbar.jsx
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [collectionsOpen, setCollectionsOpen] = useState(false);
+  const collectionsRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,49 +15,109 @@ const Navbar = () => {
       }
     };
 
+    const handleClickOutside = (event) => {
+      if (collectionsRef.current && !collectionsRef.current.contains(event.target)) {
+        setCollectionsOpen(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  // Function to scroll to sections
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
+      setCollectionsOpen(false);
+    }
+  };
 
   return (
     <nav className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
       isScrolled ? "bg-white/95 shadow-md py-3" : "bg-white/70 py-4"
     } backdrop-blur-md border-b border-[#D4AF37]/30`}>
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center">
-          <div className="mr-3">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#D4AF37" strokeWidth="1.5"/>
-              <path d="M12 6V18" stroke="#D4AF37" strokeWidth="1.5"/>
-              <path d="M16 10L12 6L8 10" stroke="#345124" strokeWidth="1.5"/>
-              <path d="M16 14L12 18L8 14" stroke="#345124" strokeWidth="1.5"/>
-            </svg>
-          </div>
-          <h1 className="text-[#345124] font-luxury text-2xl tracking-wide">प्रकृति</h1>
+    <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div className="flex items-center">
+        <div className="flex items-center space-x-4">
+          <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
+          <img src="/writtenlogo.png" alt="Prakruti" className="h-7 w-auto" />
         </div>
+      </div>
 
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex items-center space-x-8 text-[#708238] font-modern text-sm uppercase tracking-wider">
-          <li className="hover:text-[#D4AF37] cursor-pointer transition duration-200">Home</li>
-          <li className="relative group">
-            <span className="hover:text-[#D4AF37] cursor-pointer transition duration-200 flex items-center">
-              Collections
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <li 
+            className="hover:text-[#D4AF37] cursor-pointer transition duration-200"
+            onClick={() => scrollToSection('root')}
+          >
+            Home
+          </li>
+          
+          {/* Collections Dropdown */}
+          <li className="relative" ref={collectionsRef}>
+            <button 
+              className="flex items-center hover:text-[#D4AF37] cursor-pointer transition duration-200"
+              onClick={() => setCollectionsOpen(!collectionsOpen)}
+            >
+              COLLECTIONS
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                className={`ml-1 h-4 w-4 transition-transform duration-200 ${collectionsOpen ? 'rotate-180' : ''}`} 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor"
+              >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
-            </span>
-            <div className="absolute left-0 mt-2 w-48 bg-white/95 backdrop-blur-md shadow-lg rounded-sm border border-[#D4AF37]/20 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-              <a href="#" className="block px-3 py-2 text-[#708238] hover:bg-[#F5F5DC]/50 hover:text-[#D4AF37] rounded-sm">Veda Kohl Collection</a>
-              <a href="#" className="block px-3 py-2 text-[#708238] hover:bg-[#F5F5DC]/50 hover:text-[#D4AF37] rounded-sm">Kumkum Rituals</a>
-              <a href="#" className="block px-3 py-2 text-[#708238] hover:bg-[#F5F5DC]/50 hover:text-[#D4AF37] rounded-sm">Plant Tints</a>
-              <a href="#" className="block px-3 py-2 text-[#708238] hover:bg-[#F5F5DC]/50 hover:text-[#D4AF37] rounded-sm">Mini Collection</a>
-            </div>
+            </button>
+            
+            {collectionsOpen && (
+              <div className="absolute left-0 mt-2 w-48 bg-white/95 backdrop-blur-md shadow-md rounded-sm border border-[#D4AF37]/20 py-2 z-20">
+                <div 
+                  className="px-4 py-2 hover:bg-[#F5F5DC]/50 text-[#708238] hover:text-[#D4AF37] cursor-pointer transition-colors"
+                  onClick={() => scrollToSection('varieties')}
+                >
+                  Products
+                </div>
+                <div 
+                  className="px-4 py-2 hover:bg-[#F5F5DC]/50 text-[#708238] hover:text-[#D4AF37] cursor-pointer transition-colors"
+                  onClick={() => scrollToSection('collaboration')}
+                >
+                  प्रकृति x Komal
+                </div>
+              </div>
+            )}
           </li>
-          <li className="hover:text-[#D4AF37] cursor-pointer transition duration-200">About</li>
-          <li className="hover:text-[#D4AF37] cursor-pointer transition duration-200">Sustainability</li>
-          <li className="hover:text-[#D4AF37] cursor-pointer transition duration-200">Contact</li>
+          
+          <li 
+            className="hover:text-[#D4AF37] cursor-pointer transition duration-200"
+            onClick={() => scrollToSection('brandstory')}
+          >
+            About
+          </li>
+          
+          {/* Updated Sustainability link to point to the sustainability section */}
+          <li 
+            className="hover:text-[#D4AF37] cursor-pointer transition duration-200"
+            onClick={() => scrollToSection('sustainability')}
+          >
+            Sustainability
+          </li>
+          
+          <li 
+            className="hover:text-[#D4AF37] cursor-pointer transition duration-200"
+            onClick={() => scrollToSection('contact')}
+          >
+            Contact
+          </li>
         </ul>
 
         {/* Right side buttons */}
@@ -100,19 +161,78 @@ const Navbar = () => {
         <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-[#D4AF37]/10 mt-3">
           <div className="px-6 py-4">
             <ul className="space-y-4 font-modern text-sm uppercase tracking-wider">
-              <li className="py-2"><a href="#" className="block text-[#708238] hover:text-[#D4AF37]">Home</a></li>
-              <li className="py-2 border-t border-[#D4AF37]/10">
-                <a href="#" className="block text-[#708238] hover:text-[#D4AF37] mt-2">Collections</a>
-                <ul className="pl-4 mt-2 space-y-2">
-                  <li><a href="#" className="block text-[#708238]/80 hover:text-[#D4AF37] text-xs py-1">Veda Kohl Collection</a></li>
-                  <li><a href="#" className="block text-[#708238]/80 hover:text-[#D4AF37] text-xs py-1">Kumkum Rituals</a></li>
-                  <li><a href="#" className="block text-[#708238]/80 hover:text-[#D4AF37] text-xs py-1">Plant Tints</a></li>
-                  <li><a href="#" className="block text-[#708238]/80 hover:text-[#D4AF37] text-xs py-1">Mini Collection</a></li>
-                </ul>
+              <li className="py-2">
+                <div 
+                  className="block text-[#708238] hover:text-[#D4AF37] cursor-pointer"
+                  onClick={() => scrollToSection('root')}
+                >
+                  Home
+                </div>
               </li>
-              <li className="py-2 border-t border-[#D4AF37]/10"><a href="#" className="block text-[#708238] hover:text-[#D4AF37] mt-2">About</a></li>
-              <li className="py-2 border-t border-[#D4AF37]/10"><a href="#" className="block text-[#708238] hover:text-[#D4AF37] mt-2">Sustainability</a></li>
-              <li className="py-2 border-t border-[#D4AF37]/10"><a href="#" className="block text-[#708238] hover:text-[#D4AF37] mt-2">Contact</a></li>
+              
+              {/* Mobile Collections Sub-menu */}
+              <li className="py-2 border-t border-[#D4AF37]/10">
+                <div className="mt-2">
+                  <div className="flex items-center justify-between text-[#708238]">
+                    <span>Collections</span>
+                    <button onClick={() => setCollectionsOpen(!collectionsOpen)}>
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        className={`h-4 w-4 transition-transform duration-200 ${collectionsOpen ? 'rotate-180' : ''}`} 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  {collectionsOpen && (
+                    <div className="ml-4 mt-2 space-y-2">
+                      <div 
+                        className="block py-2 pl-2 border-l-2 border-[#D4AF37]/20 text-[#708238] hover:text-[#D4AF37] hover:border-[#D4AF37] cursor-pointer transition-colors"
+                        onClick={() => scrollToSection('varieties')}
+                      >
+                        Products
+                      </div>
+                      <div 
+                        className="block py-2 pl-2 border-l-2 border-[#D4AF37]/20 text-[#708238] hover:text-[#D4AF37] hover:border-[#D4AF37] cursor-pointer transition-colors"
+                        onClick={() => scrollToSection('collaboration')}
+                      >
+                        प्रकृति x Komal.ed
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </li>
+              
+              <li className="py-2 border-t border-[#D4AF37]/10">
+                <div 
+                  className="block text-[#708238] hover:text-[#D4AF37] mt-2 cursor-pointer"
+                  onClick={() => scrollToSection('brandstory')}
+                >
+                  About
+                </div>
+              </li>
+              
+              <li className="py-2 border-t border-[#D4AF37]/10">
+                <div 
+                  className="block text-[#708238] hover:text-[#D4AF37] mt-2 cursor-pointer"
+                  onClick={() => scrollToSection('sustainability')}
+                >
+                  Sustainability
+                </div>
+              </li>
+              
+              <li className="py-2 border-t border-[#D4AF37]/10">
+                <div 
+                  className="block text-[#708238] hover:text-[#D4AF37] mt-2 cursor-pointer"
+                  onClick={() => scrollToSection('contact')}
+                >
+                  Contact
+                </div>
+              </li>
             </ul>
             <div className="flex items-center space-x-4 mt-6 pt-4 border-t border-[#D4AF37]/10">
               <button className="text-[#708238]">

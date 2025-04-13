@@ -27,7 +27,7 @@ const Hero = () => {
               Pure • Natural • Luxurious
             </span>
             <h1 className="font-luxury text-4xl md:text-6xl lg:text-7xl leading-tight text-[#708238] mb-6">
-              Nature's Luxury <br />
+              Nature's Own <br />
               <span className="text-[#D4AF37]">For Your Skin</span>
             </h1>
             <p className="font-modern text-gray-700 md:text-lg max-w-lg mb-8 leading-relaxed">
@@ -36,10 +36,20 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <button className="bg-[#D4AF37] hover:bg-[#708238] text-white px-8 py-3 rounded-sm font-modern uppercase text-sm tracking-wider transition-colors duration-300">
+              <button 
+                className="bg-[#D4AF37] hover:bg-[#708238] text-white px-8 py-3 rounded-sm font-modern uppercase text-sm tracking-wider transition-colors duration-300"
+                onClick={() => {
+                  document.getElementById('varieties').scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Explore Collection
               </button>
-              <button className="bg-transparent hover:bg-[#F5F5DC] border border-[#708238] text-[#708238] px-8 py-3 rounded-sm font-modern uppercase text-sm tracking-wider transition-colors duration-300">
+              <button 
+                className="bg-transparent hover:bg-[#F5F5DC] border border-[#708238] text-[#708238] px-8 py-3 rounded-sm font-modern uppercase text-sm tracking-wider transition-colors duration-300"                   
+                onClick={() => {
+                  document.getElementById('brandstory').scrollIntoView({ behavior: 'smooth' });
+                }} 
+              >
                 Our Story
               </button>
             </div>
@@ -51,7 +61,7 @@ const Hero = () => {
               {/* Main image */}
               <div className="rounded-lg overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?q=80&w=1000&auto=format&fit=crop"
+                  src="/prakruti.png"
                   alt="Luxury Cosmetic Products"
                   className="w-full h-auto object-cover"
                 />

@@ -11,7 +11,7 @@ const BrandStory = () => {
   }, []);
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="brandstory" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-white"></div>
         <div className="absolute right-0 top-0 h-96 w-96 bg-[#F5F5DC]/50 rounded-full blur-3xl -translate-y-1/2"></div>
@@ -25,7 +25,7 @@ const BrandStory = () => {
               <div className="space-y-4">
                 <div className="rounded-lg overflow-hidden shadow-lg h-64">
                   <img 
-                    src="https://plus.unsplash.com/premium_photo-1728682626063-c12da4b7c4b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    src="/beetroot1.jpg" 
                     alt="Ayurvedic herbs" 
                     className="w-full h-full object-cover"
                   />

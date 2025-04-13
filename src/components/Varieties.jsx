@@ -5,25 +5,25 @@ import "aos/dist/aos.css";
 const products = [
   {
     id: 1,
-    name: "Beetroot Lip Tint",
-    description: "Natural pigments from organic beetroot for a vibrant, hydrating tint that nourishes your lips",
-    price: "₹1,200",
-    image: "https://images.unsplash.com/photo-1555037015-1498966bcd7c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Rose Beetroot Gloss",
+    description: "Rose scented beetroot gloss in collaboration with Komal.ed",
+    price: "₹2,400",
+    image: "/beetroot.jpg",
     category: "Lip Care"
   },
   {
     id: 2,
-    name: "Saffron Rose Facial Oil",
-    description: "Luxurious blend of precious saffron and Himalayan rose essential oils",
-    price: "₹5,800",
-    image: "https://images.unsplash.com/photo-1621478404343-61e0c4089a55?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Facial Oils"
+    name: "Vegetable Carbon Kohl",
+    description: "Pure, plant-derived carbon kohl for defining eyes with gentle, natural intensity",
+    price: "₹2,850",
+    image: "/kohl.jpg",
+    category: "Eye Essentials"
   },
   {
     id: 3,
     name: "Traditional Surma",
     description: "Hand-crafted traditional kohl made with pure herbs and minerals for defining eyes with natural elegance",
-    price: "₹1,500",
+    price: "₹3,200",
     image: "/surma.webp",
     category: "Eye Essentials"
   },
@@ -31,9 +31,25 @@ const products = [
     id: 4,
     name: "Moroccan Clay Blush",
     description: "Subtle radiance with our mineral-rich Moroccan clay blush that doubles as a skin treatment",
-    price: "₹1,400",
+    price: "₹3,400",
     image: "/moroccan-clay-blush.webp",
-    category: "Face Color"
+    category: "Cheek Tint"
+  },
+  {
+    id: 5,
+    name: "Kumkum & Stamps",
+    description: "Sacred vermillion powder with traditional brass stamps for auspicious ceremonies and cultural occasions",
+    price: "₹4,800",
+    image: "/kumkum.jpg",
+    category: "Cultural Cosmetics"
+  },
+  {
+    id: 6,
+    name: "Herbal Minis Collection",
+    description: "Assorted aromatic minis for natural breath freshening and holistic wellness",
+    price: "₹1,950",
+    image: "https://images.unsplash.com/photo-1614849024120-2c6929170f51?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Wellness Rituals"
   }
 ];
 
@@ -47,7 +63,7 @@ const Varieties = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-[#F5F5DC]/30">
+    <section id="varieties" className="py-24 bg-[#F5F5DC]/30">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="font-luxury text-4xl md:text-5xl mb-4 text-[#708238]">Indigenous Treasures</h2>
@@ -58,7 +74,8 @@ const Varieties = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Changed to 3-column grid from 4-column grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product) => (
             <div 
               key={product.id} 
@@ -101,7 +118,8 @@ const Varieties = () => {
           ))}
         </div>
         
-        <div className="mt-16 text-center" data-aos="fade-up">
+        {/* Added id="sustainability" to this section for direct navigation from navbar */}
+        <div id="sustainability" className="mt-16 text-center" data-aos="fade-up">
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg inline-block">
             <h3 className="font-luxury text-2xl text-[#708238] mb-4">Discover Our Eco-Friendly Approach</h3>
             <p className="font-modern text-sm text-gray-700 mb-6 max-w-2xl">
