@@ -16,7 +16,7 @@ const products = [
     name: "Vegetable Carbon Kohl",
     description: "Pure, plant-derived carbon kohl for defining eyes with gentle, natural intensity",
     price: "₹2,850",
-    image: "/kohl.jpg",
+    image: "/kohl1.jpg",
     category: "Eye Essentials"
   },
   {

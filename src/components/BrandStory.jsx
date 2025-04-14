@@ -25,14 +25,14 @@ const BrandStory = () => {
               <div className="space-y-4">
                 <div className="rounded-lg overflow-hidden shadow-lg h-64">
                   <img 
-                    src="/beetroot1.jpg" 
+                    src="/logo.png" 
                     alt="Ayurvedic herbs" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-lg h-48">
                   <img 
-                    src="https://images.unsplash.com/photo-1731514521203-a1dc7c3fdfa7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    src="/beetroot1.jpg" 
                     alt="Traditional Ayurvedic process" 
                     className="w-full h-full object-cover"
                   />
@@ -41,14 +41,14 @@ const BrandStory = () => {
               <div className="space-y-4 mt-8">
                 <div className="rounded-lg overflow-hidden shadow-lg h-48">
                   <img 
-                    src="https://images.unsplash.com/photo-1614849024120-2c6929170f51?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    src="/kohl.jpg" 
                     alt="Herbal ingredients" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-lg h-64">
                   <img 
-                    src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=600&auto=format&fit=crop" 
+                    src="kajal.jpg" 
                     alt="Metal Ayurvedic containers" 
                     className="w-full h-full object-cover"
                   />

@@ -6,21 +6,21 @@ const testimonials = [
   {
     id: 1,
     quote: "Prakriti's Surma is pure magic! It glides on smoothly, stays put all day, and gives my eyes that deep, intense traditional charm. It reminds me of my grandmother's kajal—but elevated, refined, and safe for daily wear.",
-    author: "Priya Malhotra",
+    author: "Vedika Rohira",
     role: "Beauty Enthusiast",
-    image: "/moroccan-clay-blush.webp"
+    image: "/surma.webp"
   },
   {
     id: 2,
     quote: "I've tried countless kohls, but nothing compares to Prakriti's. It's richly pigmented, smudge-proof, and made with natural ingredients that don't irritate my eyes. It's my go-to for both everyday looks and special occasions!",
     author: "Aakanksha Singh",
     role: "Wellness Advocate",
-    image: "/moroccan-clay-blush.webp"
+    image: "/kohl.jpg"
   },
   {
     id: 3,
     quote: "Effortless, natural, and elegant—that's how I'd describe Prakriti’s Moroccan Clay Blush. It blends seamlessly and leaves a soft, sun-kissed tint that feels like second skin. A beautiful balance of tradition and modern simplicity.",
-    author: "Gargi Bagde",
+    author: "Priya Malhotra",
     role: "Lifestyle Blogger",
     image: "/moroccan-clay-blush.webp"
   }
