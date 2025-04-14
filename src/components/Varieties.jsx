@@ -6,7 +6,7 @@ const products = [
   {
     id: 1,
     name: "Rose Beetroot Gloss",
-    description: "Rose scented beetroot gloss in collaboration with Komal.ed",
+    description: "Rose scented beetroot gloss in collaboration with Komal",
     price: "₹2,400",
     image: "/beetroot.jpg",
     category: "Lip Care"
