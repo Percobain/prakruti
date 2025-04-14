@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-20">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="mb-10 lg:mb-0 text-center lg:text-left">
-              <h3 className="font-luxury text-3xl text-[#708238] mb-3">
+              <h3 className="font-premium text-3xl text-[#708238] mb-3">
                 Join Our <span className="text-[#D4AF37]">Community</span>
               </h3>
               <p className="font-modern text-gray-600 max-w-md">
@@ -47,9 +47,9 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
             {/* Brand column */}
             <div className="lg:col-span-2">
-              <h1 className="text-[#D4AF37] font-luxury text-3xl tracking-wide mb-6">प्रकृति</h1>
+              <h1 className="text-[#D4AF37] font-premium text-3xl tracking-wide mb-6">प्रकृति</h1>
               <p className="font-modern text-gray-600 mb-8 max-w-md">
-                Embracing the ancient wisdom of Ayurveda to create luxurious, effective skincare that honors both tradition and innovation.
+                Embracing the ancient wisdom of Ayurveda to create premium, effective skincare that honors both tradition and innovation.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="w-10 h-10 rounded-full border border-[#D4AF37]/40 flex items-center justify-center text-[#708238] hover:bg-[#D4AF37]/10 transition-colors">
@@ -77,7 +77,7 @@ const Footer = () => {
             
             {/* Quick links */}
             <div>
-              <h4 className="font-luxury text-lg text-[#708238] mb-5">Quick Links</h4>
+              <h4 className="font-premium text-lg text-[#708238] mb-5">Quick Links</h4>
               <ul className="space-y-3">
                 <li><a href="#" className="font-modern text-sm text-gray-600 hover:text-[#D4AF37] transition-colors">About Us</a></li>
                 <li><a href="#" className="font-modern text-sm text-gray-600 hover:text-[#D4AF37] transition-colors">Collections</a></li>
@@ -89,7 +89,7 @@ const Footer = () => {
             
             {/* Support */}
             <div>
-              <h4 className="font-luxury text-lg text-[#708238] mb-5">Support</h4>
+              <h4 className="font-premium text-lg text-[#708238] mb-5">Support</h4>
               <ul className="space-y-3">
                 <li><a href="#" className="font-modern text-sm text-gray-600 hover:text-[#D4AF37] transition-colors">FAQ</a></li>
                 <li><a href="#" className="font-modern text-sm text-gray-600 hover:text-[#D4AF37] transition-colors">Shipping & Returns</a></li>
@@ -100,16 +100,17 @@ const Footer = () => {
             </div>
             
             <div id="contact">
-              <h4 className="font-luxury text-lg text-[#708238] mb-5">Contact</h4>
+              <h4 className="font-premium text-lg text-[#708238] mb-5">Contact</h4>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 text-[#D4AF37] mt-0.5" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
                   <span className="font-modern text-sm text-gray-600">
-                    42 Himalaya View, <br />
-                    Rishikesh, Uttarakhand <br />
-                    India, 249201
+                    Rajpura Road, <br />
+                    near Miles Motel, Basantpura <br />
+                    Rajpura, Punjab <br />
+                    India, 140406
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -140,7 +141,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="font-modern text-xs text-gray-500 mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} प्रकृति Luxury Cosmetics. All rights reserved.
+              &copy; {new Date().getFullYear()} प्रकृति. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="font-modern text-xs text-gray-500 hover:text-[#D4AF37] transition-colors">Terms of Service</a>

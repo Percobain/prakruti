@@ -36,7 +36,7 @@ const CollectionShowcase = () => {
                 className="md:h-70 filter brightness-100" 
               />
             </div>
-            <div className="text-[#D4AF37] text-3xl md:text-4xl font-luxury">x</div>
+            <div className="text-[#D4AF37] text-3xl md:text-4xl font-premium">x</div>
             <div className="mt-30 rounded-lg">
               <img 
                 src="/komal.png" 
@@ -82,8 +82,8 @@ const CollectionShowcase = () => {
                 <div className="space-y-6 mt-4 lg:mt-12">
                   <div className="rounded-lg overflow-hidden shadow-lg h-40 md:h-60 lg:h-96">
                     <img 
-                      src="https://images.unsplash.com/photo-1614849024120-2c6929170f51?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                      alt="Herbal ingredients" 
+                      src="/rose.jpg" 
+                      alt="Rose ingredients" 
                       className="w-full h-full object-cover"
                     />
                   </div>

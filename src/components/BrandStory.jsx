@@ -59,7 +59,7 @@ const BrandStory = () => {
 
           <div className="w-full lg:w-1/2 lg:pl-12" data-aos="fade-left">
             <span className="block font-modern text-sm uppercase tracking-widest text-[#D4AF37] mb-4">Our Story</span>
-            <h2 className="font-luxury text-4xl md:text-5xl mb-8 text-[#708238] leading-tight">
+            <h2 className="font-premium text-4xl md:text-5xl mb-8 text-[#708238] leading-tight">
               Prakriti: <br/><span className="text-[#D4AF37]">Earth's Own</span>
             </h2>
 
@@ -84,21 +84,21 @@ const BrandStory = () => {
 
             <div className="flex items-center space-x-8 mt-12">
               <div data-aos="fade-up" data-aos-delay="100">
-                <span className="block text-4xl font-luxury text-[#D4AF37]">100%</span>
+                <span className="block text-4xl font-premium text-[#D4AF37]">100%</span>
                 <span className="block text-xs uppercase tracking-wider font-modern text-gray-600 mt-1">Natural</span>
               </div>
               
               <div className="h-12 w-px bg-[#F5F5DC]"></div>
               
               <div data-aos="fade-up" data-aos-delay="200">
-                <span className="block text-4xl font-luxury text-[#D4AF37]">Zero</span>
+                <span className="block text-4xl font-premium text-[#D4AF37]">Zero</span>
                 <span className="block text-xs uppercase tracking-wider font-modern text-gray-600 mt-1">Chemicals</span>
               </div>
               
               <div className="h-12 w-px bg-[#F5F5DC]"></div>
               
               <div data-aos="fade-up" data-aos-delay="300">
-                <span className="block text-4xl font-luxury text-[#D4AF37]">Ayurvedic</span>
+                <span className="block text-4xl font-premium text-[#D4AF37]">Traditional</span>
                 <span className="block text-xs uppercase tracking-wider font-modern text-gray-600 mt-1">Principles</span>
               </div>
             </div>

@@ -5,22 +5,22 @@ import "aos/dist/aos.css";
 const testimonials = [
   {
     id: 1,
-    quote: "प्रकृति's Golden Elixir transformed my skincare routine. The quality is unmatched—I've never felt more confident in my natural glow.",
+    quote: "Prakriti's Surma is pure magic! It glides on smoothly, stays put all day, and gives my eyes that deep, intense traditional charm. It reminds me of my grandmother's kajal—but elevated, refined, and safe for daily wear.",
     author: "Priya Malhotra",
     role: "Beauty Enthusiast",
     image: "/moroccan-clay-blush.webp"
   },
   {
     id: 2,
-    quote: "As someone with sensitive skin, finding the Sacred Earth collection was a revelation. These products honor tradition while delivering extraordinary results.",
-    author: "Amar Singh",
+    quote: "I've tried countless kohls, but nothing compares to Prakriti's. It's richly pigmented, smudge-proof, and made with natural ingredients that don't irritate my eyes. It's my go-to for both everyday looks and special occasions!",
+    author: "Aakanksha Singh",
     role: "Wellness Advocate",
     image: "/moroccan-clay-blush.webp"
   },
   {
     id: 3,
-    quote: "The Himalayan Bloom facial oil has become my non-negotiable luxury. Worth every penny for the incredible scent and visible improvement in my skin's texture.",
-    author: "Zara Ahmed",
+    quote: "Effortless, natural, and elegant—that's how I'd describe Prakriti’s Moroccan Clay Blush. It blends seamlessly and leaves a soft, sun-kissed tint that feels like second skin. A beautiful balance of tradition and modern simplicity.",
+    author: "Gargi Bagde",
     role: "Lifestyle Blogger",
     image: "/moroccan-clay-blush.webp"
   }
@@ -57,7 +57,7 @@ const Testimonial = () => {
           <span className="block font-modern text-sm uppercase tracking-widest text-[#D4AF37] mb-4">
             Testimonials
           </span>
-          <h2 className="font-luxury text-4xl md:text-5xl mb-5 text-[#708238]">
+          <h2 className="font-premium text-4xl md:text-5xl mb-5 text-[#708238]">
             Voices of <span className="text-[#D4AF37]">Devotion</span>
           </h2>
         </div>
@@ -108,14 +108,14 @@ const Testimonial = () => {
                       : "opacity-0 absolute"
                   }`}
                 >
-                  <blockquote className="font-luxury text-2xl md:text-3xl lg:text-4xl text-[#708238] italic mb-8 leading-relaxed">
+                  <blockquote className="font-premium text-2xl md:text-3xl lg:text-4xl text-[#708238] italic mb-8 leading-relaxed">
                     "{testimonial.quote}"
                   </blockquote>
                   
                   <div className="flex items-center">
                     <div className="w-16 h-0.5 bg-[#D4AF37] mr-6"></div>
                     <div>
-                      <p className="font-luxury text-lg text-[#708238]">{testimonial.author}</p>
+                      <p className="font-premium text-lg text-[#708238]">{testimonial.author}</p>
                       <p className="font-modern text-sm text-gray-600">{testimonial.role}</p>
                     </div>
                   </div>
