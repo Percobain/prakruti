@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     id: 3,
-    quote: "Effortless, natural, and elegant—that's how I'd describe Prakriti’s Moroccan Clay Blush. It blends seamlessly and leaves a soft, sun-kissed tint that feels like second skin. A beautiful balance of tradition and modern simplicity.",
+    quote: "Effortless, natural, and elegant—that's how I'd describe Prakriti’s Clay Blush. It blends seamlessly and leaves a soft, sun-kissed tint that feels like second skin. A beautiful balance of tradition and modern simplicity.",
     author: "Priya Malhotra",
     role: "Lifestyle Blogger",
     image: "/moroccan-clay-blush.webp"
