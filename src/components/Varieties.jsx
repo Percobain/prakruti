@@ -7,7 +7,7 @@ const products = [
     id: 1,
     name: "Rose Beetroot Gloss",
     description: "Rose scented beetroot gloss in collaboration with Komal",
-    price: "₹799",
+    price: "₹2,200",
     image: "/beetroot.jpg",
     category: "Lip Care"
   },
@@ -15,7 +15,7 @@ const products = [
     id: 2,
     name: "Vegetable Carbon Kohl",
     description: "Pure, plant-derived carbon kohl for defining eyes with gentle, natural intensity",
-    price: "₹899",
+    price: "₹1,800",
     image: "/kohl1.jpg",
     category: "Eye Essentials"
   },
@@ -23,7 +23,7 @@ const products = [
     id: 3,
     name: "Traditional Surma",
     description: "Hand-crafted traditional kohl made with pure herbs and minerals for defining eyes with natural elegance",
-    price: "1,299",
+    price: "₹2,899",
     image: "/surma.webp",
     category: "Eye Essentials"
   },
@@ -31,7 +31,7 @@ const products = [
     id: 4,
     name: "Clay Blush",
     description: "Subtle radiance with our mineral-rich clay blush that doubles as a skin treatment",
-    price: "₹2,500",
+    price: "₹3,500",
     image: "/moroccan-clay-blush.webp",
     category: "Cheek Tint"
   },
@@ -39,7 +39,7 @@ const products = [
     id: 5,
     name: "Kumkum & Stamps",
     description: "Sacred vermillion powder with traditional brass stamps for auspicious ceremonies and cultural occasions",
-    price: "₹999",
+    price: "₹2,100",
     image: "/kumkum.jpg",
     category: "Cultural Cosmetics"
   },
@@ -47,7 +47,7 @@ const products = [
     id: 6,
     name: "Herbal Minis Collection",
     description: "Assorted aromatic minis for natural breath freshening and holistic wellness",
-    price: "₹399",
+    price: "₹1,199",
     image: "/beetroot1.jpg",
     category: "Wellness Rituals"
   }
